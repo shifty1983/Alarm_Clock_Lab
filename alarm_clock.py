@@ -12,10 +12,11 @@ class AlarmClock:
         print(self.current_time)
     
     def toggle_on_off(self):
-        if self.alarm_on == True:
-            self.alarm_on = False
+        if self.alarm_on == "ON":
+            self.alarm_on = "OFF"
         else:
-            self.alarm_on = True
+            self.alarm_on = "ON"
+        print(self.alarm_on)
 
     def set_alarm_time(self):
         self.alarm_time= input("Set alarm in format 00:00 AM/PM ")
